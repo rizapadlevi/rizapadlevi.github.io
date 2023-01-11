@@ -44,7 +44,7 @@
                     maxCanvasHeight: 1080;">
 
       <a-asset>
-       <a-asset-item id="holo" src="3dobj/hologram box riza fix.gltf"></a-asset-item> 
+        <a-asset-item id="holo" src="3dobj/hologram box riza fix.gltf"></a-asset-item> 
         <a-asset-item id="3denvi" src="3dobj/hall_revision.gltf"></a-asset-item>
         <a-asset-item id="vidstand" src="3dobj/vidstand.gltf"></a-asset-item>
         <!-- Gambar -->
@@ -54,6 +54,7 @@
         <img id="holo_3" src="images/holo_harike3.png">
         <img id="holo_4" src="images/holo_harike4.png">
         <img id="holo_5" src="images/holo_harike5.png">
+        <img id="holo_L" src="images/holo_latarbelakang.png">
         <img id="bingkai_monpera" src="images/bingkai/potrait monpera.png"> 
         <img id="mural1" src="images/bingkai/bingkai_mural-22.png">
         <img id="mural2" src="images/bingkai/bingkai_mural-23.png">
@@ -77,9 +78,19 @@
         <img id="foto18" src="images/bingkai/landscape10.png">
         <img id="foto19" src="images/bingkai/landscape11.png">
         <img id="foto20" src="images/bingkai/landscape12.png">
+        <img id="foto21" src="images/bingkai/landscape13.png">
         
+        <img id="textBoard1" src="assets/texboard-03.png">
+        <img id="textBoard2" src="assets/texboard-04.png">
+        <img id="textBoard3" src="assets/texboard-05.png">
+        <img id="textBoard4" src="assets/venesia dari timur.png">
+        <img id="judul1" src="assets/museumvirtual.png">
+        <img id="judul2" src="assets/perang 5 hari 5 malam.png">
+        <img id="fotoarah" src="assets/fotoarah-09.png">
+
         <img id="muralText1" src="assets/muraltext1.png">
         <img id="muralText2" src="assets/muraltext2.png">
+        
         <!-- Videoplayer -->
         <img src="assets/play_white-01.png" id="play" crossorigin="anonymous">
         <img src="assets/pause.png" id="pause" crossorigin="anonymous">
@@ -89,7 +100,7 @@
       </a-asset>
 
       <a-entity position="-28 2 -18" rotation="0 -30 0">
-        <a-entity camera look-controls mouse-cursor universal-controls wasd-controls="acceleration: 100" jump-ability kinematic-body>
+        <a-entity camera look-controls mouse-cursor universal-controls wasd-controls="acceleration: 150" jump-ability kinematic-body>
           <a-cursor color="#F0F0F0">
           </a-cursor>
         </a-entity>
@@ -256,10 +267,26 @@
       </a-entity>
       <!--Sekat-->
       <a-entity
-        gltf-model="#vidstand" position="26 1 -16" rotation="0 0 0" scale="1.2 2 2">
+        gltf-model="#vidstand" position="26 1 -12" rotation="0 0 0" scale="1.2 2 3">
+      </a-entity>
+      <a-entity
+        gltf-model="#vidstand" position="26 1 2.4" rotation="0 0 0" scale="1.2 2 2">
+      </a-entity>
+      <a-entity
+        gltf-model="#vidstand" position="50 1 -18" rotation="0 180 0" scale="1.2 2 3">
+      </a-entity>
+      <a-entity
+        gltf-model="#vidstand" position="50 1 0.25" rotation="0 180 0" scale="1.2 2 3">
+      </a-entity>
+      <a-entity
+        gltf-model="#vidstand" position="50 1 15.9" rotation="0 180 0" scale="1.2 2 1.8">
       </a-entity>
 
       <!--Caller Hologram Images-->
+      <a-gui-flex-container width=1 height=3 opacity=0 position="-22 1.8 3.6">
+        <a-image src="#holo_L" width="1.7" height="3.4" >
+        </a-image>
+      </a-gui-flex-container>
       <a-gui-flex-container width=1 height=3 opacity=0 position="-22 1.8 -5.4">
         <a-image src="#holo_1" width="1.7" height="3.4" >
         </a-image>
@@ -290,30 +317,43 @@
       <!--rules koordinat x z y-->
       <!--Bingkai-bingkai konten foto-->
       <a-image src="#bingkai_monpera" width=10 height="14" rotation="0 180 0" position="8 6 22.3"></a-image>
+      <a-image src="#judul1" width="22" height="4" rotation="0 180 0" position="31 12 22"></a-image>
       <a-image id="muralImg1" src="#mural1" width="32" height="8" rotation="0 180 0" position="31 6 22.3"></a-image>
+      <a-image src="#judul2" width="22" height="4" rotation="0 180 0" position="-15 12 22"></a-image>
       <a-image id="muralImg2" src="#mural2"  width="32" height="8" rotation="0 180 0" position="-15 6 22.3"></a-image>
+      <a-image src="#fotoarah" width="3" height="1.5" position="25.7 2 3.5" rotation="0 -90 0"></a-image>
+
+      <!--palembang tempo dulu-->
+      <a-image src="#textBoard1" width="6" height="2" position="26.15 4 -8.3" rotation="0 90 0"></a-image>
+      <a-image id="bingkai1" src="#foto1" width="3.8" height="2.8" position="26.15 1 -20.5" rotation="0 90 0"></a-image>
+      <a-image id="bingkai2" src="#foto2" width="3.8" height="2.8" position="26.15 1 -15.5" rotation="0 90 0"></a-image>
+      <a-image id="bingkai3" src="#foto3" width="3.8" height="2.8" position="26.15 1 -10.7" rotation="0 90 0"></a-image>
+      <a-image id="bingkai4" src="#foto4" width="3.8" height="2.8" position="26.15 1 -5.8" rotation="0 90 0"></a-image>
+      <a-image id="bingkai5" src="#foto5" width="3.8" height="2.8" position="26.15 1 -1,5" rotation="0 90 0"></a-image>
+      <a-image id="bingkai6" src="#foto6" width="3.8" height="2.8" position="26.15 1 3.5" rotation="0 90 0"></a-image>
+      <a-image src="#textBoard4" width="8" height="2" position="38 5 -23.4"></a-image>
+      <a-image id="bingkai15" src="#foto15" width="3.5" height="4.5" position="29 1 -23.4"></a-image>
+      <a-image id="bingkai16" src="#foto16" width="3.5" height="4.5" position="33.5 1 -23.4"></a-image>
+      <a-image id="bingkai12" src="#foto12" width="3.5" height="4.5" position="38 1 -23.4"></a-image>
+      <a-image id="bingkai14" src="#foto14" width="3.5" height="4.5" position="42.5 1 -23.4"></a-image>
+      <a-image id="bingkai11" src="#foto11" width="3.5" height="4.5" position="47 1 -23.4"></a-image>
+
+      <!--keadaan perang-->
+      <a-image src="#textBoard2" width="6" height="2" position="49.7 4 -10.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai13" src="#foto13" width="3.5" height="4.5" position="49.7 1 -20.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai9" src="#foto9" width="3.5" height="4.5" position="49.7 1 -16.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai17" src="#foto17" width="3.5" height="2.5" position="49.7 1 -12.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai10" src="#foto10" width="3.5" height="2.5" position="49.7 1 -8.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai8" src="#foto8" width="3.5" height="2.5" position="49.7 1 -4.5" rotation="0 -90 0"></a-image>
       
-      <a-image id="bingkai1" src="#foto1" width="2.5" height="2" position="26.15 4 -13.5" rotation="0 90 0"></a-image>
-      <a-image id="bingkai2" src="#foto2" width="2.5" height="2" position="26.15 4 -16.3" rotation="0 90 0"></a-image>
-      <a-image id="bingkai3" src="#foto3" width="2.5" height="2" position="26.15 4 -19.1" rotation="0 90 0"></a-image>
-      <a-image id="bingkai4" src="#foto4" width="2.5" height="2" position="26.15 4 -22" rotation="0 90 0"></a-image>
-      <a-image id="bingkai5" src="#foto5" width="2.5" height="2" position="29 4 -23.4"></a-image>
-      <a-image id="bingkai6" src="#foto6" width="2.5" height="2" position="32 4 -23.4"></a-image>
-      <a-image id="bingkai7" src="#foto7" width="2.5" height="2" position="35 4 -23.4"></a-image>
-      <a-image id="bingkai8" src="#foto8" width="2.5" height="2" position="38 4 -23.4"></a-image>
-      <a-image id="bingkai10" src="#foto10" width="2.5" height="2" position="44 4 -23.4"></a-image>
-      <a-image id="bingkai9" src="#foto9" width="2.1" height="3" position="26.15 1 -13.5" rotation="0 90 0"></a-image>
-      <a-image id="bingkai11" src="#foto11" width="2.1" height="3" position="26.15 1 -16.3" rotation="0 90 0"></a-image>
-      <a-image id="bingkai12" src="#foto12" width="2.1" height="3" position="26.15 1 -19.1" rotation="0 90 0"></a-image>
-      <a-image id="bingkai13" src="#foto13" width="2.1" height="3" position="26.15 1 -22" rotation="0 90 0"></a-image>
-      <a-image id="bingkai14" src="#foto14" width="2.1" height="3" position="29 1 -23.4"></a-image>
-      <a-image id="bingkai15" src="#foto15" width="2.1" height="3" position="32 1 -23.4"></a-image>
-      <a-image id="bingkai16" src="#foto16" width="2.1" height="3" position="35 1 -23.4"></a-image>
-      <a-image id="bingkai17" src="#foto17" width="2.5" height="2" position="41 4 -23.4"></a-image>
-      <a-image id="bingkai18" src="#foto18" width="2.5" height="2" position="44 4 -23.4"></a-image>
-      <a-image id="bingkai19" src="#foto19" width="2.5" height="2" position="38 1 -23.4"></a-image>
-      <a-image id="bingkai20" src="#foto20" width="2.5" height="2" position="41 1 -23.4"></a-image>
-      
+      <!--pasca perang-->
+      <a-image src="#textBoard3" width="6" height="2" position="49.7 4 10.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai20" src="#foto20" width="3.5" height="2.5" position="49.7 1 2.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai18" src="#foto18" width="3.5" height="2.5" position="49.7 1 6.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai19" src="#foto19" width="3.5" height="2.5" position="49.7 1 10.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai7" src="#foto7" width="3.5" height="2.5" position="49.7 1 14.5" rotation="0 -90 0"></a-image>
+      <a-image id="bingkai21" src="#foto21" width="3.5" height="2.5" position="49.7 1 18.5" rotation="0 -90 0"></a-image>
+
       <a-image id="muraltampilText1" src="#muralText1" width="16" height="2" rotation=" 0 180 0" position="31 0.7 22.3" visible="false"></a-image>
       <a-image id="muraltampilText2" src="#muralText2" width="16" height="2" rotation=" 0 180 0" position="-15 0.7 22.3" visible="false"></a-image>
 
