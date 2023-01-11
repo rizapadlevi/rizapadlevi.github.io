@@ -39,13 +39,14 @@
       reflection="directionalLight:a-light#dirlight;"
       renderer="antialias: true;
                     colorManagement: true;
-                    physicallyCorrectLights: false;
+                    physicallyCorrectLights: true;
                     maxCanvasWidth: 1080;
                     maxCanvasHeight: 1080;">
 
       <a-asset>
        <a-asset-item id="holo" src="3dobj/hologram box riza fix.gltf"></a-asset-item> 
         <a-asset-item id="3denvi" src="3dobj/hall_revision.gltf"></a-asset-item>
+        <a-asset-item id="vidstand" src="3dobj/vidstand.gltf"></a-asset-item>
         <!-- Gambar -->
         <img id="sky" src="3dobj/PANO_20221217_104811_0.png"> 
         <img id="holo_1" src="images/holo_harike1.png">
@@ -56,6 +57,29 @@
         <img id="bingkai_monpera" src="images/bingkai/potrait monpera.png"> 
         <img id="mural1" src="images/bingkai/bingkai_mural-22.png">
         <img id="mural2" src="images/bingkai/bingkai_mural-23.png">
+        <img id="foto1" src="images/bingkai/landscape1.png">
+        <img id="foto2" src="images/bingkai/landscape2.png">
+        <img id="foto3" src="images/bingkai/landscape3.png">
+        <img id="foto4" src="images/bingkai/landscape4.png">
+        <img id="foto5" src="images/bingkai/landscape5.png">
+        <img id="foto6" src="images/bingkai/landscape6.png">
+        <img id="foto7" src="images/bingkai/landscape7.png">
+        <img id="foto8" src="images/bingkai/landscape8.png">
+        <img id="foto9" src="images/bingkai/potrait1.png">
+        <img id="foto10" src="images/bingkai/potrait2.png">
+        <img id="foto11" src="images/bingkai/potrait3.png">
+        <img id="foto12" src="images/bingkai/potrait4.png">
+        <img id="foto13" src="images/bingkai/potrait5.png">
+        <img id="foto14" src="images/bingkai/potrait6.png">
+        <img id="foto15" src="images/bingkai/potrait7.png">
+        <img id="foto16" src="images/bingkai/potrait8.png">
+        <img id="foto17" src="images/bingkai/landscape9.png">
+        <img id="foto18" src="images/bingkai/landscape10.png">
+        <img id="foto19" src="images/bingkai/landscape11.png">
+        <img id="foto20" src="images/bingkai/landscape12.png">
+        
+        <img id="muralText1" src="assets/muralText1-01.png">
+        <img id="muralText2" src="assets/muralText2-02.png">
         <!-- Videoplayer -->
         <img src="assets/play_white-01.png" id="play" crossorigin="anonymous">
         <img src="assets/pause.png" id="pause" crossorigin="anonymous">
@@ -109,11 +133,11 @@
 
       <!--222222222222222222222222222222222222222222222222222222222222222222222222222222222-->
       <a-sound id="alert-sound2" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
-      <a-video id="video-screen2" src="#video-src2" position="-16 2 -30" width="8" height="4.5"></a-video>
+      <a-video id="video-screen2" src="#video-src2" position="-16 1.8 -30" width="8" height="4.5"></a-video>
 
-      <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="-16.8 0.6 -29.8" visible="false" scale="0.85 0.85 0.85"></a-image>
-      <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="-16 0.6 -29.8"></a-image>
-      <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="-15.2 0.6 -29.8" visible="false" scale="0.75 0.75 0.75"></a-image>
+      <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="-16.8 0.4 -29.8" visible="false" scale="0.85 0.85 0.85"></a-image>
+      <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="-16 0.4 -29.8"></a-image>
+      <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="-15.2 0.4 -29.8" visible="false" scale="0.75 0.75 0.75"></a-image>
 
       <a-entity id="progress-bar2" geometry="primitive: plane; width: 4; height: 0.06;"
           material="transparent: true; visible:false; opacity: 0;" position="-4 0.1 -6">
@@ -123,11 +147,11 @@
 
       <!--33333333333333333333333333333333333333333333333333333333333333333333333333333333-->
       <a-sound id="alert-sound2" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
-      <a-video id="video-screen2" src="#video-src2" position="4 2 -24" width="8" height="4.5"></a-video>
+      <a-video id="video-screen2" src="#video-src2" position="4 1.7 -24" width="8" height="4.5"></a-video>
 
-      <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="4.8 0.6 -23.8" visible="false" scale="0.85 0.85 0.85"></a-image>
-      <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="4 0.6 -23.8"></a-image>
-      <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="-3.2 0.6 -23.8" visible="false" scale="0.75 0.75 0.75"></a-image>
+      <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="4.8 0.2 -23.8" visible="false" scale="0.85 0.85 0.85"></a-image>
+      <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="4 0.2 -23.8"></a-image>
+      <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="-3.2 0.2 -23.8" visible="false" scale="0.75 0.75 0.75"></a-image>
 
       <a-entity id="progress-bar2" geometry="primitive: plane; width: 4; height: 0.06;"
           material="transparent: true; visible:false; opacity: 0;" position="-4 0.1 -6">
@@ -137,11 +161,11 @@
 
       <!--44444444444444444444444444444444444444444444444444444444444444444444444444444444-->
       <a-sound id="alert-sound2" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
-      <a-video id="video-screen2" src="#video-src2" position="8 2 -28"" width="8" height="4.5"></a-video>
+      <a-video id="video-screen2" src="#video-src2" position="8 1.6 -28"" width="8" height="4.5"></a-video>
 
-      <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="8.8 0.6 -27.8" visible="false" scale="0.85 0.85 0.85"></a-image>
-      <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="8 0.6 -27.8"></a-image>
-      <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="7.2 0.6 -27.8" visible="false" scale="0.75 0.75 0.75"></a-image>
+      <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="8.8 0.15 -27.8" visible="false" scale="0.85 0.85 0.85"></a-image>
+      <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="8 0.15 -27.8"></a-image>
+      <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="7.2 0.15 -27.8" visible="false" scale="0.75 0.75 0.75"></a-image>
 
       <a-entity id="progress-bar2" geometry="primitive: plane; width: 4; height: 0.06;"
           material="transparent: true; visible:false; opacity: 0;" position="-4 0.1 -6">
@@ -151,11 +175,11 @@
       
        <!--55555555555555555555555555555555555555555555555555555555555555555555555555555555-->
        <a-sound id="alert-sound2" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
-       <a-video id="video-screen2" src="#video-src2" position="-4 2 -22"" width="8" height="4.5"></a-video>
+       <a-video id="video-screen2" src="#video-src2" position="-4 1.5 -22"" width="8" height="4.5"></a-video>
  
-       <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="-4.8 0.6 -21.8" visible="false" scale="0.85 0.85 0.85"></a-image>
-       <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="-4 0.6 -21.8"></a-image>
-       <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="-3.2 0.6 -21.8" visible="false" scale="0.75 0.75 0.75"></a-image>
+       <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="-4.8 0 -21.8" visible="false" scale="0.85 0.85 0.85"></a-image>
+       <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="-4 0 -21.8"></a-image>
+       <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="-3.2 0 -21.8" visible="false" scale="0.75 0.75 0.75"></a-image>
  
        <a-entity id="progress-bar2" geometry="primitive: plane; width: 4; height: 0.06;"
            material="transparent: true; visible:false; opacity: 0;" position="-4 0.1 -6">
@@ -164,7 +188,11 @@
        </a-plane>
 
       <a-sky src="#sky" rotation="0 180 0"></a-sky>
-      
+      <a-entity
+        gltf-model="#3denvi"
+        position="8 -3 -3">
+      </a-entity>
+
       <!--Hologram Boxes-->
       <!--Latar Belakang-->
       <a-entity
@@ -197,9 +225,36 @@
         position="2 -2 -12">
       </a-entity>
       
+      
+      
+      <!--Vidstand-->
+      <!--latar belakang-->
       <a-entity
-        gltf-model="#3denvi"
-        position="8 -3 -3">
+        gltf-model="#vidstand" position="-17.2 1 2.93" rotation="0 -90 0" scale="0.6 1.4 1.5">
+      </a-entity> 
+      <!--1-->
+      <a-entity
+        gltf-model="#vidstand" position="-17.2 1 -6.15" rotation="0 -90 0" scale="0.6 1.4 1.5">
+      </a-entity>
+      <!--2-->
+      <a-entity
+        gltf-model="#vidstand" position="-1.2 1 -6.15" rotation="0 -90 0" scale="0.6 1.4 1.5">
+      </a-entity> 
+      <!--3-->
+      <a-entity
+        gltf-model="#vidstand" position="14.8 1 -6.15" rotation="0 -90 0" scale="0.6 1.4 1.5">
+      </a-entity> 
+      <!--4-->
+      <a-entity
+        gltf-model="#vidstand" position="14.8 1 -16.08" rotation="0 -90 0" scale="0.6 1.4 1.5">
+      </a-entity>
+      <!--5-->
+      <a-entity
+        gltf-model="#vidstand" position="-1.2 1 -16.08" rotation="0 -90 0" scale="0.6 1.4 1.5">
+      </a-entity>
+      <!--Sekat-->
+      <a-entity
+        gltf-model="#vidstand" position="26 1 -16" rotation="0 0 0" scale="1.2 2 2">
       </a-entity>
 
       <!--Caller Hologram Images-->
@@ -233,8 +288,35 @@
       <!--rules koordinat x z y-->
       <!--Bingkai-bingkai konten foto-->
       <a-image src="#bingkai_monpera" width=10 height="14" rotation="0 180 0" position="8 6 22.3"></a-image>
-      <a-image src="#mural1" width="32" height="8" rotation="0 180 0" position="31 6 22.3"></a-image>
-      <a-image src="#mural2"  width="32" height="8" rotation="0 180 0" position="-15 6 22.3"></a-image>
+      <a-image id="muralImg1" src="#mural1" width="32" height="8" rotation="0 180 0" position="31 6 22.3"></a-image>
+      <a-image id="muralImg2" src="#mural2"  width="32" height="8" rotation="0 180 0" position="-15 6 22.3"></a-image>
+      
+      <a-image id="bingkai1" src="#foto1" width="2.5" height="2" position="26.15 4 -13.5" rotation="0 90 0"></a-image>
+      <a-image id="bingkai2" src="#foto2" width="2.5" height="2" position="26.15 4 -16.3" rotation="0 90 0"></a-image>
+      <a-image id="bingkai3" src="#foto3" width="2.5" height="2" position="26.15 4 -19.1" rotation="0 90 0"></a-image>
+      <a-image id="bingkai4" src="#foto4" width="2.5" height="2" position="26.15 4 -22" rotation="0 90 0"></a-image>
+      <a-image id="bingkai5" src="#foto5" width="2.5" height="2" position="29 4 -23.4"></a-image>
+      <a-image id="bingkai6" src="#foto6" width="2.5" height="2" position="32 4 -23.4"></a-image>
+      <a-image id="bingkai7" src="#foto7" width="2.5" height="2" position="35 4 -23.4"></a-image>
+      <a-image id="bingkai8" src="#foto8" width="2.5" height="2" position="38 4 -23.4"></a-image>
+      <a-image id="bingkai10" src="#foto10" width="2.5" height="2" position="44 4 -23.4"></a-image>
+      <a-image id="bingkai9" src="#foto9" width="2.1" height="3" position="26.15 1 -13.5" rotation="0 90 0"></a-image>
+      <a-image id="bingkai11" src="#foto11" width="2.1" height="3" position="26.15 1 -16.3" rotation="0 90 0"></a-image>
+      <a-image id="bingkai12" src="#foto12" width="2.1" height="3" position="26.15 1 -19.1" rotation="0 90 0"></a-image>
+      <a-image id="bingkai13" src="#foto13" width="2.1" height="3" position="26.15 1 -22" rotation="0 90 0"></a-image>
+      <a-image id="bingkai14" src="#foto14" width="2.1" height="3" position="29 1 -23.4"></a-image>
+      <a-image id="bingkai15" src="#foto15" width="2.1" height="3" position="32 1 -23.4"></a-image>
+      <a-image id="bingkai16" src="#foto16" width="2.1" height="3" position="35 1 -23.4"></a-image>
+      <a-image id="bingkai17" src="#foto17" width="2.5" height="2" position="41 4 -23.4"></a-image>
+      <a-image id="bingkai18" src="#foto18" width="2.5" height="2" position="44 4 -23.4"></a-image>
+      <a-image id="bingkai19" src="#foto19" width="2.5" height="2" position="38 1 -23.4"></a-image>
+      <a-image id="bingkai20" src="#foto20" width="2.5" height="2" position="41 1 -23.4"></a-image>
+      
+      <a-image id="muralText1" src="#muralText1" material="transparent:true" width="4" height="1" rotation=" 0 180 0" position="31 2 20" visible="true"></a-image>
+
+
+      
+
 
     </a-scene>
 
@@ -248,6 +330,13 @@
       var cursor = document.querySelector('a-cursor');
       var videoPlayer2 = new AVideoPlayer2();
     </script>
-
+    <script>
+      document.querySelector('#muralImg1').addEventListener('click', function () {
+        document.querySelector('#muralText1').setAttribute('visible', true);
+            });
+      document.querySelector('#muralText1').addEventListener('click', function () {
+        document.querySelector('#muralText1').setAttribute('visible', false);
+            });
+    </script>
   </body>
 </html>
