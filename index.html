@@ -78,8 +78,8 @@
         <img id="foto19" src="images/bingkai/landscape11.png">
         <img id="foto20" src="images/bingkai/landscape12.png">
         
-        <img id="muralText1" src="assets/muralText1-01.png">
-        <img id="muralText2" src="assets/muralText2-02.png">
+        <img id="muralText1" src="assets/muraltext1.png">
+        <img id="muralText2" src="assets/muraltext2.png">
         <!-- Videoplayer -->
         <img src="assets/play_white-01.png" id="play" crossorigin="anonymous">
         <img src="assets/pause.png" id="pause" crossorigin="anonymous">
@@ -97,33 +97,35 @@
       </a-entity>
 
       <a-assets>
-        <video id="video-src" src="assets/tes.mp4"></video>
-        <video id="video-src2" src="assets/tes2.mp4"></video>
+        <video id="video-src" src="assets/h1.mp4"></video>
+        <video id="video-src2" src="assets/h2.mp4"></video>
+        <video id="video-src3" src="assets/h3.mp4"></video>
+        <video id="video-src4" src="assets/h4.mp4"></video>
+        <video id="video-src5" src="assets/h5.mp4"></video>
+        <video id="video-srcL" src="assets/h0.mp4"></video>
       </a-assets>
 
       <!--Latar Belakang-->
-      <a-sound id="alert-sound2" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
-      <a-video id="video-screen2" src="#video-src2" position="-20 2 -33"" width="8" height="4.5"></a-video>
+      <a-sound id="alert-soundL" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
+      <a-video id="video-screenL" src="#video-srcL" position="-20 2 -33"" width="8" height="4.5"></a-video>
 
-      <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="-20.8 0.6 -32.8" visible="false" scale="0.85 0.85 0.85"></a-image>
-      <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="-20 0.6 -32.8"></a-image>
-      <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="-19.2 0.6 -32.8" visible="false" scale="0.75 0.75 0.75"></a-image>
+      <a-image id="control-backL" width="0.4" height="0.4" src="#seek-back" position="-20.8 0.6 -32.8" visible="false" scale="0.85 0.85 0.85"></a-image>
+      <a-image id="control-playL" width="0.5" height="0.5" src="#play" position="-20 0.6 -32.8"></a-image>
+      <a-image id="control-volumeL" width="0.4" height="0.4" src="#volume-normal" position="-19.2 0.6 -32.8" visible="false" scale="0.75 0.75 0.75"></a-image>
 
-      <a-entity id="progress-bar2" geometry="primitive: plane; width: 4; height: 0.06;"
+      <a-entity id="progress-barL" geometry="primitive: plane; width: 4; height: 0.06;"
           material="transparent: true; visible:false; opacity: 0;" position="-4 0.1 -6">
-        <a-plane id="progress-bar-track2" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2" visible="false"></a-plane>
-        <a-plane id="progress-bar-fill2" width="0" height="0.06" color="#7198e5" position="-2 0 0.01" visible="false"></a-plane>
+        <a-plane id="progress-bar-trackL" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2" visible="false"></a-plane>
+        <a-plane id="progress-bar-fillL" width="0" height="0.06" color="#7198e5" position="-2 0 0.01" visible="false"></a-plane>
       </a-plane>
 
       <!--11111111111111111111111111111111111111111111111111111111111111111111111111111111-->
       <a-sound id="alert-sound" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
       <a-video id="video-screen" src="#video-src" position="-16 2 -36" width="8" height="4.5"></a-video>
-      <!-- END MEDIAS HOLDER -->
 
       <a-image id="control-back" width="0.4" height="0.4" src="#seek-back" position="-16.8 0.6 -35.8" visible="false" scale="0.85 0.85 0.85"></a-image>
       <a-image id="control-play" width="0.5" height="0.5" src="#play" position="-16 0.6 -35.8"></a-image>
       <a-image id="control-volume" width="0.4" height="0.4" src="#volume-normal" position="-15.2 0.6 -35.8" visible="false" scale="0.75 0.75 0.75"></a-image>
-      <!-- END CONTROLS -->
 
       <a-entity id="progress-bar" geometry="primitive: plane; width: 4; height: 0.06;"
           material="transparent: true; visible:false; opacity: 0;" position="16 0.1 -6">
@@ -146,45 +148,45 @@
       </a-plane>
 
       <!--33333333333333333333333333333333333333333333333333333333333333333333333333333333-->
-      <a-sound id="alert-sound2" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
-      <a-video id="video-screen2" src="#video-src2" position="4 1.7 -24" width="8" height="4.5"></a-video>
+      <a-sound id="alert-sound3" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
+      <a-video id="video-screen3" src="#video-src3" position="4 1.7 -24" width="8" height="4.5"></a-video>
 
-      <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="4.8 0.2 -23.8" visible="false" scale="0.85 0.85 0.85"></a-image>
-      <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="4 0.2 -23.8"></a-image>
-      <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="-3.2 0.2 -23.8" visible="false" scale="0.75 0.75 0.75"></a-image>
+      <a-image id="control-back3" width="0.4" height="0.4" src="#seek-back" position="3.2 0.2 -23.8" visible="false" scale="0.85 0.85 0.85"></a-image>
+      <a-image id="control-play3" width="0.5" height="0.5" src="#play" position="4 0.2 -23.8"></a-image>
+      <a-image id="control-volume3" width="0.4" height="0.4" src="#volume-normal" position="4.8 0.2 -23.8" visible="false" scale="0.75 0.75 0.75"></a-image>
 
-      <a-entity id="progress-bar2" geometry="primitive: plane; width: 4; height: 0.06;"
+      <a-entity id="progress-bar3" geometry="primitive: plane; width: 4; height: 0.06;"
           material="transparent: true; visible:false; opacity: 0;" position="-4 0.1 -6">
-        <a-plane id="progress-bar-track2" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2" visible="false"></a-plane>
-        <a-plane id="progress-bar-fill2" width="0" height="0.06" color="#7198e5" position="-2 0 0.01" visible="false"></a-plane>
+        <a-plane id="progress-bar-track3" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2" visible="false"></a-plane>
+        <a-plane id="progress-bar-fill3" width="0" height="0.06" color="#7198e5" position="-2 0 0.01" visible="false"></a-plane>
       </a-plane>
 
       <!--44444444444444444444444444444444444444444444444444444444444444444444444444444444-->
-      <a-sound id="alert-sound2" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
-      <a-video id="video-screen2" src="#video-src2" position="8 1.6 -28"" width="8" height="4.5"></a-video>
+      <a-sound id="alert-sound4" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
+      <a-video id="video-screen4" src="#video-src4" position="8 1.6 -28"" width="8" height="4.5"></a-video>
 
-      <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="8.8 0.15 -27.8" visible="false" scale="0.85 0.85 0.85"></a-image>
-      <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="8 0.15 -27.8"></a-image>
-      <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="7.2 0.15 -27.8" visible="false" scale="0.75 0.75 0.75"></a-image>
+      <a-image id="control-back4" width="0.4" height="0.4" src="#seek-back" position="7.2 0.15 -27.8" visible="false" scale="0.85 0.85 0.85"></a-image>
+      <a-image id="control-play4" width="0.5" height="0.5" src="#play" position="8 0.15 -27.8"></a-image>
+      <a-image id="control-volume4" width="0.4" height="0.4" src="#volume-normal" position="8.8 0.15 -27.8" visible="false" scale="0.75 0.75 0.75"></a-image>
 
-      <a-entity id="progress-bar2" geometry="primitive: plane; width: 4; height: 0.06;"
+      <a-entity id="progress-bar4" geometry="primitive: plane; width: 4; height: 0.06;"
           material="transparent: true; visible:false; opacity: 0;" position="-4 0.1 -6">
-        <a-plane id="progress-bar-track2" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2" visible="false"></a-plane>
-        <a-plane id="progress-bar-fill2" width="0" height="0.06" color="#7198e5" position="-2 0 0.01" visible="false"></a-plane>
+        <a-plane id="progress-bar-track4" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2" visible="false"></a-plane>
+        <a-plane id="progress-bar-fill4" width="0" height="0.06" color="#7198e5" position="-2 0 0.01" visible="false"></a-plane>
       </a-plane>
       
        <!--55555555555555555555555555555555555555555555555555555555555555555555555555555555-->
-       <a-sound id="alert-sound2" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
-       <a-video id="video-screen2" src="#video-src2" position="-4 1.5 -22"" width="8" height="4.5"></a-video>
+       <a-sound id="alert-sound5" src="src: url(assets/action.wav)" autoplay="false" position="6 2 -13"></a-sound>
+       <a-video id="video-screen5" src="#video-src5" position="-4 1.5 -22"" width="8" height="4.5"></a-video>
  
-       <a-image id="control-back2" width="0.4" height="0.4" src="#seek-back" position="-4.8 0 -21.8" visible="false" scale="0.85 0.85 0.85"></a-image>
-       <a-image id="control-play2" width="0.5" height="0.5" src="#play" position="-4 0 -21.8"></a-image>
-       <a-image id="control-volume2" width="0.4" height="0.4" src="#volume-normal" position="-3.2 0 -21.8" visible="false" scale="0.75 0.75 0.75"></a-image>
+       <a-image id="control-back5" width="0.4" height="0.4" src="#seek-back" position="-4.8 0 -21.8" visible="false" scale="0.85 0.85 0.85"></a-image>
+       <a-image id="control-play5" width="0.5" height="0.5" src="#play" position="-4 0 -21.8"></a-image>
+       <a-image id="control-volume5" width="0.4" height="0.4" src="#volume-normal" position="-3.2 0 -21.8" visible="false" scale="0.75 0.75 0.75"></a-image>
  
-       <a-entity id="progress-bar2" geometry="primitive: plane; width: 4; height: 0.06;"
+       <a-entity id="progress-bar5" geometry="primitive: plane; width: 4; height: 0.06;"
            material="transparent: true; visible:false; opacity: 0;" position="-4 0.1 -6">
-         <a-plane id="progress-bar-track2" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2" visible="false"></a-plane>
-         <a-plane id="progress-bar-fill2" width="0" height="0.06" color="#7198e5" position="-2 0 0.01" visible="false"></a-plane>
+         <a-plane id="progress-bar-track5" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2" visible="false"></a-plane>
+         <a-plane id="progress-bar-fill5" width="0" height="0.06" color="#7198e5" position="-2 0 0.01" visible="false"></a-plane>
        </a-plane>
 
       <a-sky src="#sky" rotation="0 180 0"></a-sky>
@@ -312,16 +314,22 @@
       <a-image id="bingkai19" src="#foto19" width="2.5" height="2" position="38 1 -23.4"></a-image>
       <a-image id="bingkai20" src="#foto20" width="2.5" height="2" position="41 1 -23.4"></a-image>
       
-      <a-image id="muralText1" src="#muralText1" material="transparent:true" width="4" height="1" rotation=" 0 180 0" position="31 2 20" visible="true"></a-image>
-
-
-      
-
+      <a-image id="muraltampilText1" src="#muralText1" width="16" height="2" rotation=" 0 180 0" position="31 0.7 22.3" visible="false"></a-image>
+      <a-image id="muraltampilText2" src="#muralText2" width="16" height="2" rotation=" 0 180 0" position="-15 0.7 22.3" visible="false"></a-image>
 
     </a-scene>
 
     <script src="js/AVideoPlayer.js"></script>
     <script src="js/AVideoPlayer2.js"></script>
+    <script src="js/AVideoPlayer3.js"></script>
+    <script src="js/AVideoPlayer4.js"></script>
+    <script src="js/AVideoPlayer5.js"></script>
+    <script src="js/AVideoPlayerL.js"></script>
+    
+    <script type="text/javascript">
+      var cursor = document.querySelector('a-cursor');
+      var videoPlayerL = new AVideoPlayerL();
+    </script>
     <script type="text/javascript">
       var cursor = document.querySelector('a-cursor');
       var videoPlayer = new AVideoPlayer();
@@ -330,12 +338,31 @@
       var cursor = document.querySelector('a-cursor');
       var videoPlayer2 = new AVideoPlayer2();
     </script>
+    <script type="text/javascript">
+      var cursor = document.querySelector('a-cursor');
+      var videoPlayer3 = new AVideoPlayer3();
+    </script>
+    <script type="text/javascript">
+      var cursor = document.querySelector('a-cursor');
+      var videoPlayer4 = new AVideoPlayer4();
+    </script>
+    <script type="text/javascript">
+      var cursor = document.querySelector('a-cursor');
+      var videoPlayer5 = new AVideoPlayer5();
+    </script>
+
     <script>
       document.querySelector('#muralImg1').addEventListener('click', function () {
-        document.querySelector('#muralText1').setAttribute('visible', true);
+        document.querySelector('#muraltampilText1').setAttribute('visible', true);
             });
-      document.querySelector('#muralText1').addEventListener('click', function () {
-        document.querySelector('#muralText1').setAttribute('visible', false);
+      document.querySelector('#muraltampilText1').addEventListener('click', function () {
+        document.querySelector('#muraltampilText1').setAttribute('visible', false);
+            });
+      document.querySelector('#muralImg2').addEventListener('click', function () {
+        document.querySelector('#muraltampilText2').setAttribute('visible', true);
+            });
+      document.querySelector('#muraltampilText2').addEventListener('click', function () {
+        document.querySelector('#muraltampilText2').setAttribute('visible', false);
             });
     </script>
   </body>
